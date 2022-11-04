@@ -43,12 +43,11 @@ def input_students
     puts "Now we have #{@students.count} students"
     name = STDIN.gets.chomp
   end
-  @students
 end
 
 def show_students
     print_header
-    print_students_list
+    print_student_list
     print_footer
 end
 
@@ -63,7 +62,7 @@ def print_student_list
   end
 end
 
-def print_footer(students)
+def print_footer
   puts "Overall, we have #{@students.count} great students"
 end
 
